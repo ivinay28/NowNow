@@ -1,0 +1,22 @@
+package Campaign_and_ProductPOM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CreateProductPOM 
+{
+	public CreateProductPOM(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy (xpath = "//img[@src='themes/softed/images/btnL3Add.gif']")
+	private WebElement createBtn;
+	
+	public void createProduct()
+	{
+		createBtn.click();
+	}
+}
