@@ -37,13 +37,23 @@
     <artifactId>webdrivermanager</artifactId>
     <version>5.3.2</version>
 </dependency>
-
-
-  	<dependency>
+ 	<dependency>
   		<groupId>SeleniumProject</groupId>
   		<artifactId>SeleniumProject</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --> 
+  	<dependency> 
+		  <groupId>mysql</groupId> 
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>8.0.28</version> 
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi --> 
+	<dependency>
+		 <groupId>com.sikulix</groupId>
+		 <artifactId>sikulixapi</artifactId>
+		 <version>2.0.5</version> 
+	</dependency>
   </dependencies>
   
   <profiles>

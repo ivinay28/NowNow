@@ -1,318 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="11" passed="0" failed="0" skipped="3">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-19T19:47:51 IST" name="Suite" finished-at="2023-04-19T19:47:51 IST" duration-ms="147">
+  <suite started-at="2023-05-30T09:20:42 IST" name="Default suite" finished-at="2023-05-30T09:20:42 IST" duration-ms="820">
     <groups>
-      <group name="regressiontest">
-        <method signature="CreateAndDeletePOM.createAndDeletePOM()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" name="createAndDeletePOM" class="Product.CreateAndDeletePOM"/>
-      </group> <!-- regressiontest -->
-      <group name="sanitytest">
-        <method signature="CreateOrganizationPOM.createOrganizationPOM()[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" name="createOrganizationPOM" class="Organization.CreateOrganizationPOM"/>
-      </group> <!-- sanitytest -->
-      <group name="smoketest">
-        <method signature="CampaignwithProductPOM.campaignwithProductPOM()[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" name="campaignwithProductPOM" class="Campaign.CampaignwithProductPOM"/>
-      </group> <!-- smoketest -->
     </groups>
-    <test started-at="2023-04-19T19:47:51 IST" name="Test" finished-at="2023-04-19T19:47:51 IST" duration-ms="147">
-      <class name="Organization.CreateOrganizationPOM">
-        <test-method is-config="true" signature="BC(java.lang.String)[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" started-at="2023-04-19T19:47:51 IST" name="BC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871543" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2023-05-30T09:20:42 IST" name="Default test" finished-at="2023-05-30T09:20:42 IST" duration-ms="820">
+      <class name="Practice.DataProviderWithExcel">
+        <test-method signature="bookTickets(java.lang.String,java.lang.String)[pri:0, instance:Practice.DataProviderWithExcel@1b2abca6]" started-at="2023-05-30T09:20:42 IST" name="bookTickets" data-provider="dataProvider" finished-at="2023-05-30T09:20:42 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Goa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" started-at="2023-04-19T19:47:51 IST" name="BM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871546" status="SKIP">
+        </test-method> <!-- bookTickets -->
+        <test-method signature="bookTickets(java.lang.String,java.lang.String)[pri:0, instance:Practice.DataProviderWithExcel@1b2abca6]" started-at="2023-05-30T09:20:42 IST" name="bookTickets" data-provider="dataProvider" finished-at="2023-05-30T09:20:42 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createOrganizationPOM()[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" started-at="2023-04-19T19:47:51 IST" name="createOrganizationPOM" finished-at="2023-04-19T19:47:51 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- bookTickets -->
+        <test-method signature="bookTickets(java.lang.String,java.lang.String)[pri:0, instance:Practice.DataProviderWithExcel@1b2abca6]" started-at="2023-05-30T09:20:42 IST" name="bookTickets" data-provider="dataProvider" finished-at="2023-05-30T09:20:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hyderbad]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrganizationPOM -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" started-at="2023-04-19T19:47:51 IST" name="AM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871559" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Organization.CreateOrganizationPOM@74751b3]" started-at="2023-04-19T19:47:51 IST" name="AC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871562" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- Organization.CreateOrganizationPOM -->
-      <class name="Product.CreateAndDeletePOM">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="BS" finished-at="2023-04-19T19:47:51 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="BT" finished-at="2023-04-19T19:47:51 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC(java.lang.String)[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="BC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871490" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="BM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871522" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createAndDeletePOM()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="createAndDeletePOM" finished-at="2023-04-19T19:47:51 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAndDeletePOM -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="AM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871532" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="AC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871539" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="AT" finished-at="2023-04-19T19:47:51 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:Product.CreateAndDeletePOM@1e04fa0a]" started-at="2023-04-19T19:47:51 IST" name="AS" finished-at="2023-04-19T19:47:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AS -->
-      </class> <!-- Product.CreateAndDeletePOM -->
-      <class name="Campaign.CampaignwithProductPOM">
-        <test-method is-config="true" signature="BC(java.lang.String)[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" started-at="2023-04-19T19:47:51 IST" name="BC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871571" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" started-at="2023-04-19T19:47:51 IST" name="BM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871574" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="campaignwithProductPOM()[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" started-at="2023-04-19T19:47:51 IST" name="campaignwithProductPOM" finished-at="2023-04-19T19:47:51 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'BROWSER' is required by BeforeClass on method BC but has not been marked @Optional or defined
-in D:\Eclipse java space\SeleniumFrameWork\Batttcchtestng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- campaignwithProductPOM -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" started-at="2023-04-19T19:47:51 IST" name="AM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871583" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Campaign.CampaignwithProductPOM@306e95ec]" started-at="2023-04-19T19:47:51 IST" name="AC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1681913871592" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- Campaign.CampaignwithProductPOM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- bookTickets -->
+      </class> <!-- Practice.DataProviderWithExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

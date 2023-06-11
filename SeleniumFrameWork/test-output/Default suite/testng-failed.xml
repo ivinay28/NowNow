@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.DataProviderWithExcel">
+      <class name="Organization.CreateOrganizationPOM">
         <methods>
-          <include name="ticketbooking"/>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="createOrganizationPOM"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="BM"/>
+          <include name="AM"/>
         </methods>
-      </class> <!-- Practice.DataProviderWithExcel -->
+      </class> <!-- Organization.CreateOrganizationPOM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

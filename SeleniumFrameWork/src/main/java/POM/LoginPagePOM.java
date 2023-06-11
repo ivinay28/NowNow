@@ -33,10 +33,10 @@ public class LoginPagePOM
 		return submitBtn;
 	}
 	
-	public void loginToApp(String username, String password)
+	public void loginToApp(String name, String word)
 	{
-		usernametf.sendKeys(username);
-		passwordtf.sendKeys(password);
+		usernametf.sendKeys(name);
+		passwordtf.sendKeys(word);
 		submitBtn.click();
 	}
 }

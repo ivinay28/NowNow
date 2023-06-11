@@ -7,7 +7,7 @@
 		 	<class name="Product.CreateAndDeletePOM"/>
      		<class name="Organization.CreateOrganizationPOM"/>
 	  </classes>
-  </test> <!-- Test -->
+  </test> 
   
   <test name="Testrunner2">
 	  <classes>

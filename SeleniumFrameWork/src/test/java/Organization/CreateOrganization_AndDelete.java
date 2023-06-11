@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -16,7 +17,7 @@ import Generic_Utility.Property_Utility;
 public class CreateOrganization_AndDelete extends  BaseClass
 {
 	@Test (groups = "regressiontest")
-	public void createOrganization_AndDelete() throws Throwable 
+	public void createOrganization_AndDelete(WebDriver driver) throws Throwable 
 	{
 		Property_Utility plib = new Property_Utility();
 		String URL = plib.getKeyValue("url");

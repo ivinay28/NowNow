@@ -1,5 +1,8 @@
 package Generic_Utility;
 
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -20,8 +23,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass 
 {
-	public static WebDriver sdriver;
 	public WebDriver driver;
+	public static WebDriver sdriver;
 	Property_Utility plib = new Property_Utility();
 	
 	@BeforeSuite(groups = {"smoketest","regressiontest","sanitytest"})
@@ -36,14 +39,13 @@ public class BaseClass
 		System.out.println("Parallel Execution");
 	}
 	
-	@Parameters ("BROWSER")
+	//@Parameters ("BROWSER")
+	
 	@BeforeClass (groups = {"smoketest","regressiontest","sanitytest"})
-	//public void BC() throws Throwable
-	public void BC(String BROWSER) throws Throwable
+	public void BC() throws Throwable
+	//public void BC(String BROWSER) throws Throwable
 	{
-		
-		//String BROWSER = plib.getKeyValue("browser");
-		
+		String BROWSER = plib.getKeyValue("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
@@ -63,18 +65,22 @@ public class BaseClass
 		{
 			driver= new ChromeDriver();
 		}
-		//sdriver=driver;
-		//driver.manage().window().maximize();
+		sdriver=driver;
+		driver.manage().window().maximize();
+//		WebDriverManager.chromedriver().setup();
+//		WebDriver driver = new ChromeDriver();
 		System.out.println("Browser Opened");
 	}
 	
 	@BeforeMethod(groups = {"smoketest","regressiontest","sanitytest"})
 	public void BM() throws Throwable
 	{
-		Property_Utility plib = new Property_Utility();
-		String URL = plib.getKeyValue("url");
-		String USERNAME = plib.getKeyValue("username");
-		String PASSWORD = plib.getKeyValue("password");
+		FileInputStream fis = new FileInputStream("./src/test/resources/PropertyFile.properties");
+		Properties pro = new Properties();
+		pro.load(fis);
+		String URL = pro.getProperty("url");
+		String USERNAME = pro.getProperty("username");
+		String PASSWORD = pro.getProperty("password");
 		driver.get(URL);
 		LoginPagePOM login = new LoginPagePOM(driver);
 		login.loginToApp(USERNAME, PASSWORD);
